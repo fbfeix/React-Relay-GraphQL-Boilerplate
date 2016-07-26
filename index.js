@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 var express = require('express');
+var graphQLHTTP = require('express-graphql');
 var app = express();
 
 var compress = require('compression');
@@ -28,7 +29,17 @@ if (env.production) {
   Object.assign(env, {
     assets: JSON.parse(fs.readFileSync(path.join(process.cwd(), 'assets.json')))
   });
+} else { // development
+
+  var Schema = require('./data/schema');
+  
+  app.use('/graphiql', graphQLHTTP({
+    graphiql: true,
+    schema: Schema,
+  }));
+
 }
+
 
 app.get('/', function(req, res) {
   res.render('index', {

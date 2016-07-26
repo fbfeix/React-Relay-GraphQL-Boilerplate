@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>react-webpack-boilerplate</title>
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+
+  <meta name="viewport" content="width=730px, initial-scale=1.0, user-scalable=no" >
+</head>
+  <body class="fullbleed">
+    <div id="js-main"></div>
+
+  <%- body %>
+
+  <% if (env.production) { %>
+    <script async src="<%= env.assets.main.js %>"></script>
+  <% } else { %>
+    <script src="http://localhost:3000/client/main.js"></script>
+  <% } %>
+  </body>
+</html>

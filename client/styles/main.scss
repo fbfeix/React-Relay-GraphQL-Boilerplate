@@ -1,0 +1,49 @@
+//first example
+$highlight-color: #ff0000;
+$lowlight-color: #742C2C;
+$contrast-color: #fff;
+$modest-color: #A8A8A8;
+$dark-color: #3B3B3B;
+
+/*
+//second example
+$highlight-color: #2980B9;
+$lowlight-color: #E74C3C;
+$contrast-color: #ECF0F1;
+$modest-color: #3498DB;
+$dark-color: #2C3E50;
+
+
+// third example
+$highlight-color: #ff0000;
+$lowlight-color: darken($highlight-color, 10%);
+$contrast-color: #fff;
+$modest-color: #A8A8A8;
+$dark-color: darken($modest-color, 40%);
+
+//fourth example
+$highlight-color: #3498DB;
+$lowlight-color: darken($highlight-color, 10%);
+$contrast-color: #fff;
+$modest-color: #A8A8A8;
+$dark-color: darken($modest-color, 40%);
+*/
+
+$common-page-width: 780px;
+$initial-border-radius: 4px;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: $contrast-color;
+  font-family: Arial;  
+  padding: 40px;
+
+  h1 {
+    color: $highlight-color;
+  }
+
+  p {
+    color: $lowlight-color;
+  }
+}

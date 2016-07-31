@@ -1,4 +1,4 @@
-# react-webpack-boilerplate [![Build Status](https://travis-ci.org/fbfeix/React-Relay-GraphQL-Boilerplate.svg?branch=master)](https://travis-ci.org/fbfeix/React-Relay-GraphQL-Boilerplate)
+# react-relay-graphql-webpack-boilerplate [![Build Status](https://travis-ci.org/fbfeix/React-Relay-GraphQL-Boilerplate.svg?branch=master)](https://travis-ci.org/fbfeix/React-Relay-GraphQL-Boilerplate)
 > Simple production-ready boilerplate for [React](http://facebook.github.io/react/) and [Webpack](http://webpack.github.io/) (SASS and React hot reloading) and tests with Jest.
 
 ## Install
